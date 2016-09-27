@@ -40,8 +40,8 @@ public class LoginPresenter implements ILoginPresenter {
 			public void run() {
 				// TODO Auto-generated method stub
 				iLoginView.hideProgress();
-				// int code = usermodel.checkUserValidity(usermodel);
-				int code = usermodel.check();
+				 int code = usermodel.checkUserValidity(usermodel);
+//				int code = usermodel.check();
 				switch (code) {
 				case 1:
 					iLoginView.loginSuccess();

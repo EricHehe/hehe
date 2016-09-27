@@ -56,6 +56,10 @@ public class BaseActivity extends Activity implements OnClickListener {
 		ll_header.addView(view);
 	}
 
+	protected View getHeaderView() {
+		return rl_header;
+	}
+
 	protected void setOnILoginView(ILoginView iLoginView) {
 	}
 

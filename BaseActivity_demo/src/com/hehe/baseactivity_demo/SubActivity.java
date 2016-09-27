@@ -1,11 +1,14 @@
 package com.hehe.baseactivity_demo;
 
-import receiver.TimeReceiver;
 
 import com.example.baseactivity_demo.R;
 import com.hehe.custom.MyPopupWindow1;
+import com.hehe.custom.MyPopupWindow2;
+import com.hehe.receiver.TimeReceiver;
 import com.hehe.service.TimeService;
 
+import android.annotation.SuppressLint;
+import android.app.ActionBar.LayoutParams;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +17,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -50,17 +54,19 @@ public class SubActivity extends BaseActivity {
 		tv_pop2.setOnClickListener(this);
 	}
 
-	@Override
+	@SuppressLint("NewApi")
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		super.onClick(v);
 		switch (v.getId()) {
 		case R.id.tv_pop1:
 			MyPopupWindow1 myPopupWindow1 = new MyPopupWindow1(SubActivity.this);
-			myPopupWindow1.showAsDropDown(v);
+			myPopupWindow1.showAsDropDown(getHeaderView(), 0, 0, Gravity.RIGHT);
 			break;
 		case R.id.tv_pop2:
-
+			MyPopupWindow2 myPopupWindow2 = new MyPopupWindow2(this);
+			myPopupWindow2.showAtLocation(this.getWindow().getDecorView(),
+					Gravity.LEFT | Gravity.BOTTOM, 0, 0);
 			break;
 
 		default:

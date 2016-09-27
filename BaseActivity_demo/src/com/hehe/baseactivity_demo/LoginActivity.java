@@ -44,7 +44,7 @@ public class LoginActivity extends BaseActivity implements ILoginView  {
 		pd = new ProgressDialog(this);
 		inflater = LayoutInflater.from(this);
 		btn_login.setOnClickListener(this);
-		this.setOnILoginView(this);
+//		this.setOnILoginView(this);
 		
 	}
 

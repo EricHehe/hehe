@@ -1,4 +1,4 @@
-package receiver;
+package com.hehe.receiver;
 
 import com.hehe.baseactivity_demo.SubActivity;
 
