@@ -1,5 +1,6 @@
-package com.example.baseactivity_demo;
+package com.hehe.baseactivity_demo;
 
+import com.example.baseactivity_demo.R;
 import com.hehe.mvp.ILoginView;
 
 import android.app.Activity;
@@ -48,7 +49,7 @@ public class BaseActivity extends Activity implements OnClickListener {
 		btn_rightbutton.setText(rightbutton_text);
 	}
 
-	public void addHeaderView(View view) {
+	protected void addHeaderView(View view) {
 		rl_header.setVisibility(View.GONE);
 		view.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
 				LayoutParams.MATCH_PARENT));

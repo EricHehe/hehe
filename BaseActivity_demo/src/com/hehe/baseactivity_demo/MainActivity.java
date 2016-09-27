@@ -1,5 +1,6 @@
-package com.example.baseactivity_demo;
+package com.hehe.baseactivity_demo;
 
+import com.example.baseactivity_demo.R;
 import com.hehe.custom.MyDialog;
 
 import android.app.Dialog;

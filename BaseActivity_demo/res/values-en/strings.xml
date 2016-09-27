@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- sub -->
+    <string name="tv_pop_test1">poptest1</string>
+    <string name="tv_pop_test2">poptest2</string>
+</resources>

@@ -1,4 +1,4 @@
-package com.example.baseactivity_demo;
+package com.hehe.baseactivity_demo;
 
 import android.app.Application;
 

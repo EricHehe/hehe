@@ -7,4 +7,7 @@
     <string name="title_activity_sub">SubActivity</string>
     <string name="title_activity_login">LoginActivity</string>
 
+    <!-- sub -->
+    <string name="tv_pop_test1">pop测试1</string>
+    <string name="tv_pop_test2">pop测试2</string>
 </resources>

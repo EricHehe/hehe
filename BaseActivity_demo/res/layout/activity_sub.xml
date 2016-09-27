@@ -2,10 +2,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.baseactivity_demo.SubActivity" >
+    tools:context="com.hehe.baseactivity_demo.SubActivity" >
+
+    <LinearLayout
+        android:id="@+id/ln_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_nowtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </LinearLayout>
+
     <TextView
+        android:id="@+id/tv_pop1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ln_time"
+        android:text="@string/tv_pop_test1" />
+
+    <TextView
+        android:id="@+id/tv_pop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ln_time" 
+        android:text="@string/tv_pop_test2"/>
 
 </RelativeLayout>

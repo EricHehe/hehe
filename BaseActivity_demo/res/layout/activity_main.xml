@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.baseactivity_demo.MainActivity" 
+    tools:context="com.hehe.baseactivity_demo.MainActivity" 
     android:background="#000">
 
     <LinearLayout
