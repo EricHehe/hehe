@@ -31,6 +31,12 @@
             android:name="com.hehe.baseactivity_demo.LoginActivity"
             android:label="@string/title_activity_login" >
         </activity>
+        <activity android:name="com.hehe.netnew.LoadingActivity"
+            >
+            <intent-filter >
+                
+            </intent-filter>
+        </activity>
         <service 
             android:name="com.hehe.service.TimeService"></service>
     </application>
