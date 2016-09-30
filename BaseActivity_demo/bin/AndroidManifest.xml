@@ -37,6 +37,9 @@
                 
             </intent-filter>
         </activity>
+        <activity android:name="com.hehe.netnew.NetTabActivity"></activity>
+        <activity android:name="com.hehe.netnew.NewsActivity"></activity>
+        <activity android:name="com.hehe.netnew.MeActivity"></activity>
         <service 
             android:name="com.hehe.service.TimeService"></service>
     </application>

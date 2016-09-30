@@ -3,8 +3,10 @@ package com.hehe.baseactivity_demo;
 import com.example.baseactivity_demo.R;
 import com.hehe.mvp.ILoginView;
 import com.hehe.mvp.LoginPresenter;
+import com.hehe.netnew.LoadingActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -14,7 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class LoginActivity extends BaseActivity implements ILoginView  {
+public class LoginActivity extends BaseActivity implements ILoginView {
 
 	private EditText et_name;
 	private EditText et_pass;
@@ -44,8 +46,8 @@ public class LoginActivity extends BaseActivity implements ILoginView  {
 		pd = new ProgressDialog(this);
 		inflater = LayoutInflater.from(this);
 		btn_login.setOnClickListener(this);
-//		this.setOnILoginView(this);
-		
+		// this.setOnILoginView(this);
+
 	}
 
 	private void initHeader() {
@@ -96,6 +98,8 @@ public class LoginActivity extends BaseActivity implements ILoginView  {
 	public void loginSuccess() {
 		// TODO Auto-generated method stub
 		Toast.makeText(this, "login success!", Toast.LENGTH_SHORT).show();
+		startActivity(new Intent(this, LoadingActivity.class));
+		finish();
 	}
 
 	@Override
